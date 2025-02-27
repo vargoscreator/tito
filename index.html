@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>$TITO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <nav class="header__menu">
+                    <button class="header__menu-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                            <rect x="3.53516" y="0.706421" width="40" height="5" rx="1" transform="rotate(45 3.53516 0.706421)" fill="#3C2868"/>
+                            <rect x="31.8203" y="3.53552" width="40" height="5" rx="1" transform="rotate(135 31.8203 3.53552)" fill="#3C2868"/>
+                        </svg>
+                    </button>
+                    <ul>
+                        <li>
+                            <a class="header__link" href="#manifesto">Manifesto</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#roadmap">Roadmap</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#cryptonomics">cryptonomics</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#buy">BUY</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#playlist">Playlist</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__lang">
+                    <span class="header__lang-selected">En</span>
+                    <div class="header__lang-block">
+                        <a class="header__lang-select" href="#">Cn</a>
+                    </div>
+                </div>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21" fill="none">
+                        <rect width="40" height="5" rx="1" fill="#3C2868"/>
+                        <rect y="8" width="40" height="5" rx="1" fill="#3C2868"/>
+                        <rect y="16" width="40" height="5" rx="1" fill="#3C2868"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title" data-aos="fade-up" data-aos-delay="0">Make <br>Americans <img src="img/us.png" alt=""><br> Wealth Again</h1>
+                    <div class="hero__block"  data-aos="fade-up" data-aos-delay="50">
+                        <div class="hero__image" >
+                            <img class="hero__image-main" src="img/hero.svg" alt="">
+                            <img class="hero-icon-bg" src="img/hero-bg.svg" alt=""  data-aos="zoom-in" data-aos-delay="100">
+                        </div>
+                        <div class="hero__social">
+                            <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0" href="https://t.me/titocoin_news" target="_blank">Telegram news</a>
+                            <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50" href="https://x.com/titocoin_solana" target="_blank">X</a>
+                            <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" href="https://t.me/tito_coin" target="_blank">Telegram chat</a>
+                        </div>
+                        <div class="paralax-icon hero-icon-1">
+                            <img src="img/icon-1.svg" alt="">
+                        </div>
+                        <div class="paralax-icon hero-icon-2">
+                            <img src="img/icon-1.svg" alt="">
+                        </div>
+                        <div class="paralax-icon hero-icon-3">
+                            <img src="img/icon-2.svg" alt="">
+                        </div>
+                        <div class="paralax-icon hero-icon-4">
+                            <img src="img/icon-2.svg" alt="">
+                        </div>
+                    </div>
+                    <a class="hero__btn btn" href="#"  data-aos="fade-right" data-aos-delay="100">Buy $TITO</a>
+                    <p class="hero__vaucher" data-aos="fade-right" data-aos-delay="150">buy VAUCHER: <a href="#">Visa/MasterCard</a></p>
+                    <div class="hero__adress" data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+                        <p class="hero__adress-name">Contract adress:</p>
+                        <p class="hero__adress-adress" data-adress="EQDxf3en_rymhG0bwHGEt5XoZRAWJRQySCTF-4qsHy4Nm5I2">EQDxf3en_rymhG..........-4qsHy4Nm5I2</p>
+                        <button class="hero__adress-copy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 6.5V3.5C8.5 2.95 8.95 2.5 9.5 2.5H20.5C21.05 2.5 21.5 2.95 21.5 3.5V17.5C21.5 18.05 21.05 18.5 20.5 18.5H16.5V7.5C16.5 6.95 16.05 6.5 15.5 6.5H8.5Z" stroke="#5848B4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 22.5H4.5C3.95 22.5 3.5 22.05 3.5 21.5V7.5C3.5 6.95 3.95 6.5 4.5 6.5H15.5C16.05 6.5 16.5 6.95 16.5 7.5V21.5C16.5 22.05 16.05 22.5 15.5 22.5Z" stroke="#5848B4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
+                                <path d="M1 5.5L6.5 11L17 1" stroke="#8776DD" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <p class="hero__adress-copied">Copied</p>
+                    </div>
+                    <div class="hero__links">
+                        <p class="hero__links-name" data-aos="fade-right" data-aos-delay="250" data-aos-anchor-placement="top-bottom">Verify on:</p>
+                        <div class="hero__links-block">
+                            <a href="#" target="_blank" data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <path d="M31.9133 16.6662C31.9133 19.5015 31.9133 22.3368 31.9133 25.1722C31.9133 26.0303 31.8508 26.8801 31.6758 27.7257C31.405 29.0382 30.6883 30.0646 29.68 30.9059C28.8675 31.5832 27.9258 31.9492 26.8883 32.0838C26.1592 32.1764 25.4217 32.2227 24.6842 32.2184C19.2133 32.2184 13.7425 32.2184 8.27166 32.2142C7.45916 32.2184 6.65082 32.1385 5.85499 31.9745C4.92582 31.7767 4.12999 31.335 3.42999 30.6998C2.68416 30.0225 2.11332 29.2233 1.80499 28.2473C1.62999 27.6878 1.54249 27.1157 1.49666 26.5352C1.42166 25.6265 1.42582 24.7178 1.42582 23.8092C1.42582 18.6349 1.42582 13.4606 1.42999 8.28636C1.42999 7.32722 1.51749 6.3723 1.78416 5.44681C1.97582 4.78636 2.31749 4.21004 2.74249 3.67999C3.37999 2.88912 4.15082 2.27915 5.09666 1.90475C5.63416 1.69441 6.19666 1.58924 6.76749 1.53035C7.58832 1.44201 8.40916 1.43359 9.22999 1.43359C14.3758 1.43359 19.5175 1.43359 24.6592 1.43359C25.255 1.43359 25.8508 1.4378 26.4425 1.50511C27.5675 1.63552 28.6383 1.92157 29.555 2.62831C30.6675 3.48648 31.4008 4.60126 31.6883 5.9979C31.8383 6.72566 31.9133 7.47025 31.9133 8.21064C31.9133 11.0334 31.9133 13.8477 31.9133 16.6662Z" fill="#2B6AFF"/>
+                                    <path d="M20.134 15.5475C19.9673 15.8083 19.8007 16.0734 19.6382 16.3342C19.0173 17.3228 18.4215 18.324 17.8173 19.321C17.6257 19.6365 17.3965 19.9225 17.0965 20.1455C16.1798 20.827 15.234 20.1371 15.1257 19.3294C15.0507 18.8077 15.0048 18.2819 14.9965 17.7561C14.9923 17.1461 14.9965 16.5361 14.9965 15.9303C14.9965 15.842 14.9882 15.7536 14.984 15.6653C14.9423 15.6653 14.9382 15.699 14.9257 15.7158C13.784 17.6214 12.584 19.4934 11.4173 21.3823C11.3465 21.4958 11.2798 21.6136 11.2048 21.7272C11.1715 21.7777 11.1715 21.8113 11.2173 21.8618C12.3965 23.0944 13.7965 23.9273 15.4882 24.1881C17.5423 24.5079 19.409 24.0409 21.0798 22.7873C21.284 22.6359 21.4673 22.4592 21.6673 22.2993C21.9132 22.1058 22.184 21.988 22.509 22.0637C22.5548 22.0722 22.5923 22.0932 22.6257 22.1226C22.7007 22.1984 22.7757 22.2657 22.859 22.333C23.109 22.5181 23.1215 22.7663 23.0548 23.0397C22.9715 23.3636 22.7507 23.5866 22.5048 23.7885C21.3715 24.7392 20.0965 25.4165 18.6465 25.7236C15.8715 26.3167 13.3423 25.753 11.1132 23.982C9.41318 22.6317 8.33401 20.8648 7.85901 18.7278C7.61318 17.6214 7.58818 16.5024 7.75485 15.3792C8.26318 11.8877 10.7298 9.24163 13.4923 8.18153C14.384 7.83658 15.3215 7.64728 16.2757 7.61783C17.3173 7.58417 18.3382 7.67672 19.3382 8.00064C20.6715 8.42552 21.8882 9.15749 22.8923 10.1377C24.2798 11.4922 25.1548 13.1286 25.5215 15.0427C25.7007 15.9766 25.7423 16.9189 25.5923 17.857C25.4132 18.9886 24.5048 20.1118 23.2757 20.3474C22.059 20.583 20.9257 19.9478 20.434 18.7488C20.2215 18.2314 20.1632 17.6887 20.1632 17.1377C20.1632 16.6286 20.1632 16.1238 20.1632 15.6148C20.1632 15.598 20.1632 15.5812 20.159 15.5643L20.134 15.5475Z" fill="#FEFEFE"/>
+                                    <path d="M16.6405 17.9998V17.2383C16.6405 16.1909 16.6446 15.1392 16.6321 14.0917C16.628 13.6668 16.5321 13.263 16.2238 12.9433C15.9446 12.6614 15.5238 12.5815 15.1613 12.7371C14.9113 12.8465 14.6988 13.0274 14.5446 13.2588C14.178 13.7846 13.8696 14.3483 13.5238 14.8868C12.4071 16.6073 11.3655 18.3742 10.2655 20.1031C10.178 20.242 10.103 20.2462 10.028 20.0905C9.9363 19.9054 9.85713 19.7161 9.78213 19.5226C9.46129 18.7065 9.29463 17.8399 9.28213 16.9607C9.25713 15.1266 9.76546 13.4649 10.9113 12.0346C12.0363 10.6296 13.4821 9.71671 15.2488 9.38859C17.803 8.91743 20.0196 9.63678 21.8655 11.4583C23.0155 12.5899 23.6821 13.995 23.9488 15.5977C24.0488 16.1867 24.0696 16.7882 24.0113 17.3814C23.9655 17.8189 23.7905 18.2017 23.4446 18.4835C23.1571 18.7149 22.8321 18.8453 22.4696 18.6981C22.0863 18.5466 21.8905 18.2311 21.8238 17.8273C21.728 17.2383 21.7405 16.6452 21.753 16.052C21.7613 15.5472 21.7946 15.034 21.6863 14.5334C21.5571 13.9529 21.2238 13.5406 20.628 13.3892C20.3405 13.3177 20.0738 13.4144 19.8238 13.549C19.4446 13.7552 19.1571 14.0665 18.9155 14.4156C18.4821 15.034 18.1071 15.6945 17.7071 16.3381C17.3738 16.8766 17.0405 17.415 16.7071 17.9535C16.6946 17.9703 16.6821 17.9914 16.6696 18.0082L16.6405 17.9998Z" fill="#2B6AFF"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" data-aos="fade-right" data-aos-delay="350" data-aos-anchor-placement="top-bottom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="34" viewBox="0 0 30 34" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9565 12.004C19.0421 11.49 20.4234 10.7334 21.8064 9.69671C22.098 10.2717 22.1299 10.7735 21.9797 11.1787C21.8732 11.4642 21.6726 11.7126 21.4088 11.9101C21.1231 12.1237 20.7664 12.2791 20.372 12.3632C19.6236 12.5232 18.7499 12.4298 17.9565 12.004ZM18.1447 17.2707L19.5818 18.0589C16.6476 19.6204 15.8499 22.5201 14.9024 25.3443C13.955 22.5201 13.1572 19.6204 10.2232 18.0589L11.6602 17.2707C11.7992 17.2208 11.918 17.1304 11.9996 17.0124C12.0812 16.8945 12.1214 16.7551 12.1145 16.6141C11.9828 13.9691 12.7349 12.7994 13.7494 12.065C14.1133 11.802 14.5105 11.6699 14.9024 11.6699C15.2943 11.6699 15.6915 11.802 16.0555 12.065C17.07 12.7994 17.8221 13.9691 17.6905 16.6141C17.6835 16.7551 17.7237 16.8945 17.8053 17.0124C17.8869 17.1304 18.0057 17.2208 18.1447 17.2707ZM14.9024 0C16.5635 0.0423477 18.2287 0.348554 19.6739 0.944229C20.6747 1.35726 21.6085 1.90284 22.4541 2.55524C22.8359 2.84976 23.1503 3.13429 23.4967 3.46184C24.4309 3.4925 25.7961 2.50705 26.4299 1.58495C25.3391 4.98062 20.3616 8.99062 16.9155 10.525C16.9141 10.5245 16.9132 10.5237 16.9121 10.523C16.2937 10.0746 15.5981 9.85038 14.9024 9.85038C14.2067 9.85038 13.5113 10.0746 12.8928 10.523C12.8918 10.5236 12.8908 10.5246 12.8894 10.525C9.44325 8.99062 4.46579 4.98062 3.375 1.58495C4.0087 2.50705 5.37393 3.4925 6.3081 3.46184C6.65459 3.1344 6.96901 2.84976 7.35075 2.55524C8.19631 1.90284 9.13013 1.35726 10.1309 0.944229C11.5762 0.348554 13.2414 0.0423477 14.9024 0ZM11.8483 12.004C10.7628 11.49 9.38138 10.7334 7.99853 9.69671C7.70693 10.2717 7.67499 10.7735 7.82511 11.1787C7.93169 11.4642 8.13232 11.7126 8.39599 11.9101C8.68179 12.1237 9.03857 12.2791 9.43296 12.3632C10.1813 12.5232 11.0549 12.4298 11.8483 12.004Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3237 8.42675C24.085 7.69718 24.7559 6.88965 25.2953 6.16907L25.5693 6.65871C26.4513 8.3343 26.9095 10.0032 26.9095 11.8813L26.9077 14.8616L26.9242 16.4065C26.9881 20.1994 27.8524 24.0369 29.8101 27.5487L25.714 24.4123L22.8156 28.8783L19.7707 26.1565L14.9051 33.6543L10.0394 26.1566L6.99461 28.8784L4.09629 24.4124L0 27.5488C1.95777 24.037 2.82202 20.1995 2.88602 16.4066L2.90258 14.8617L2.90069 11.8814C2.90069 10.0032 3.35884 8.3343 4.24108 6.65882L4.51493 6.16918C5.05435 6.88976 5.72508 7.69718 6.48654 8.42686L6.24877 8.89583C5.78683 9.8067 5.63388 10.8252 5.99373 11.7938C6.2257 12.4176 6.64908 12.9527 7.19489 13.3611C7.72484 13.7577 8.35204 14.0251 9.00869 14.1655C9.43644 14.2569 9.87224 14.2945 10.3052 14.2817C10.2042 14.8255 10.16 15.3895 10.1572 15.9642L6.29325 18.0834L9.27497 19.6704C9.51329 19.7973 9.74016 19.9427 9.95327 20.105C12.4115 22.2009 13.8895 28.401 14.9052 31.4295C15.921 28.401 17.3988 22.2009 19.8572 20.105C20.0703 19.9427 20.2972 19.7973 20.5355 19.6704L23.5172 18.0834L19.6532 15.9642C19.6503 15.3895 19.6062 14.8255 19.5052 14.2817C19.9381 14.2945 20.3739 14.2569 20.8017 14.1655C21.4583 14.0251 22.0856 13.7577 22.6155 13.3611C23.1612 12.9527 23.5847 12.4176 23.8165 11.7938C24.1765 10.8252 24.0234 9.80681 23.5616 8.89583L23.3238 8.42686L23.3237 8.42675Z" fill="black"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-bottom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.92504 1.58327C7.28104 2.45218 5.93602 3.18744 5.93631 3.21735C5.93704 3.29453 9.88195 5.32158 10.022 5.31664C10.0857 5.31447 10.5477 5.09868 11.0487 4.83715L11.9597 4.36173L12.9547 4.88062L13.9495 5.3996L15.5789 4.65678C18.0339 3.53746 18.2889 3.4148 18.2489 3.37359C18.1959 3.31892 17.3153 2.83894 14.9263 1.5628C13.7716 0.946021 12.651 0.341291 12.4359 0.218925C12.2207 0.0965578 12.0154 -0.00187822 11.9795 2.72028e-05C11.9436 0.00193262 10.5691 0.714399 8.92504 1.58327ZM1.71447 5.3717L0.00308753 6.26861V10.2049C0.00308753 12.37 0.0255597 14.1413 0.0531247 14.1413C0.0805942 14.1413 0.9226 13.7709 1.9242 13.3183L3.74531 12.4954V8.34619L4.63522 8.83811C5.32097 9.21684 6.00713 9.59479 6.69371 9.97197L7.86226 10.6139L8.38224 10.3753C8.70835 10.2255 9.03381 10.0742 9.3586 9.9214C9.60958 9.80281 10.2257 9.52126 10.7277 9.29561C11.2297 9.06987 11.6944 8.84286 11.7603 8.79113C11.8478 8.7224 10.7805 8.12397 7.81251 6.57761C5.57532 5.41197 3.67312 4.46198 3.58539 4.46653C3.49767 4.47108 2.65576 4.87836 1.71447 5.3717ZM18.5574 5.62357C17.3918 6.15745 16.4374 6.61559 16.4363 6.64171C16.4353 6.66781 17.0705 7.05106 17.8481 7.49324C18.6256 7.93553 19.2617 8.32103 19.2617 8.35007C19.2617 8.37904 18.5737 8.71727 17.7329 9.10184C16.892 9.48631 14.7665 10.4602 13.0095 11.2661L7.1224 13.966C5.6415 14.6453 4.30663 15.2575 4.15604 15.3267C1.13122 16.716 0.299809 17.1015 0.185634 17.1677C0.0708223 17.2343 0.044817 17.6214 0.024382 19.564L0 21.881L1.5304 22.6722L3.06076 23.4633L5.18286 22.4916C6.35004 21.9572 7.30495 21.492 7.30495 21.4577C7.30495 21.4236 7.08926 21.281 6.82577 21.1407C6.56216 21.0005 6.01799 20.6901 5.61638 20.4508C5.21481 20.2114 4.81439 19.9919 4.72647 19.9627C4.63859 19.9337 4.56796 19.8829 4.56939 19.8498C4.57086 19.8167 5.50533 19.3664 6.64587 18.8489C8.86116 17.844 10.5565 17.0694 14.1961 15.3995C15.8236 14.6529 17.4513 13.9068 19.0792 13.1611C20.5099 12.5059 22.1733 11.7407 22.7758 11.4606L23.871 10.9514L23.8954 8.60801L23.9199 6.26473L22.3677 5.45638C21.5139 5.01183 20.7842 4.64919 20.7459 4.65052C20.7077 4.65174 19.7228 5.08957 18.5574 5.62357ZM23.4552 14.0776C23.2264 14.1909 22.7746 14.4032 22.4512 14.5492C22.1277 14.6952 21.5139 14.9762 21.0872 15.1737L20.3114 15.5328L20.2937 17.59C20.2839 18.7215 20.2428 19.6422 20.2024 19.6363C20.1106 19.6224 18.6565 18.8658 17.1949 18.0711C16.1399 17.4977 16.0736 17.4749 15.8257 17.5994C15.6824 17.6715 14.8259 18.0613 13.9223 18.4658C13.0186 18.8702 12.2499 19.2275 12.2137 19.2599C12.1776 19.2922 13.9963 20.2922 16.2552 21.4824L20.3622 23.6463L22.1167 22.7254C23.0815 22.219 23.902 21.7571 23.9398 21.699C24.0248 21.5684 24.0175 13.8535 23.9324 13.864C23.8987 13.8681 23.6839 13.9642 23.4552 14.0776ZM13.7397 23.1329C13.4354 23.2656 13.1311 23.3986 12.827 23.5317C11.9085 23.9349 12.0885 23.9482 10.9958 23.3963C10.268 23.0287 9.95424 22.9153 9.81807 22.9704C9.71593 23.0116 8.83687 23.4129 7.86446 23.862C6.89211 24.3112 6.0628 24.6786 6.02155 24.6786C5.61358 24.6786 6.29182 25.0898 8.909 26.4293L11.9783 28L13.2697 27.3531C13.98 26.9973 15.4127 26.2849 16.4534 25.7699C17.4941 25.2548 18.3328 24.82 18.3171 24.8036C18.3012 24.7872 17.4292 24.3329 16.3791 23.794L14.4699 22.8142L13.7397 23.1329Z" fill="#05A3C9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="around">
+            <div class="around-slider-bg">
+                <div class="around-slider-content">
+                    <p class="around-bg">Banana cycle is what we all are waiting for and keep the attention on. Their perspective? The market is like a child growing into  Banana cycle is what we all are waiting for and keep the attention on. Their perspective? The market is like a child growing into Banana cycle is what we all are waiting for and keep the attention on. Their perspective? The market is like a child growing into</p>
+                    <p class="around-bg">Banana cycle is what we all are waiting for and keep the attention on. Their perspective? The market is like a child growing into  Banana cycle is what we all are waiting for and keep the attention on. Their perspective? The market is like a child growing into Banana cycle is what we all are waiting for and keep the attention on. Their perspective? The market is like a child growing into</p>
+                </div>
+            </div>   
+            <div class="container">
+                <div class="around__inner">
+                    <h2 class="around__title" data-aos="fade-up" data-aos-delay="0">The $TITO around</h2>
+                    <div class="around__growing" data-aos="fade-up" data-aos-delay="50">
+                        <div class="around__growing-inner">
+                            <div class="around__growing-content">
+                                <p class="around__growing-name">growing fast:</p>
+                                <p class="around__growing-descr">site visits <span>7 523</span></p>
+                                <p class="around__growing-descr">Telegram <span>12 342</span></p>
+                                <p class="around__growing-descr">X <span>11 000</span></p>
+                            </div>
+                            <div class="around__growing-content">
+                                <p class="around__growing-name">growing fast:</p>
+                                <p class="around__growing-descr">site visits <span>7 523</span></p>
+                                <p class="around__growing-descr">Telegram <span>12 342</span></p>
+                                <p class="around__growing-descr">X <span>11 000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="around__content">
+                        <div class="around__block">
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="0">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="50">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="150">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="200">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="250">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="300">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="350">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="400">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                            <div class="around__item" data-aos="fade-up" data-aos-delay="450">
+                                <img src="img/around/around.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="manifesto">
+            <span id="manifesto"></span>
+            <div class="container">
+                <div class="manifesto__inner">
+                    <div class="manifesto__block" data-aos="zoom-in" data-aos-delay="0">
+                        <img class="manifesto__image icon-image-bg" src="img/manifesto/manifesto.svg" alt="">
+                        <img class="manifesto__bg icon-hieroglyph-bg" src="img/manifesto/manifesto-bg.svg" alt="">
+                    </div>
+                    <div class="manifesto__content">
+                        <h2 class="manifesto__title" data-aos="fade-right" data-aos-delay="0" data-aos-anchor-placement="top-bottom">Manifesto</h2>
+                        <p class="manifesto__descr" data-aos="fade-right" data-aos-delay="50" data-aos-anchor-placement="top-bottom">Just like the promise to make Americans wealthy again, $TITO empowers everyone to chase prosperity. Hold $TITO and join the journey to abundance.</p>
+                        <a class="manifesto__btn btn" href="#" data-aos="fade-right" data-aos-delay="100" data-aos-anchor-placement="top-bottom">Buy $TITO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="roadmap">
+            <span id="roadmap"></span>
+            <div class="container">
+                <div class="roadmap__inner">
+                    <div class="roadmap-icon-1" data-aos="zoom-in" data-aos-delay="50">
+                        <img src="img/icon-1.svg" alt="">
+                    </div>
+                    <div class="roadmap-icon-2" data-aos="zoom-in" data-aos-delay="50">
+                        <img src="img/icon-1.svg" alt="">
+                    </div>
+                    <h2 class="roadmap__title"  data-aos="zoom-in" data-aos-delay="0">$TITO Roadmap and growth</h2>
+                    <div class="roadmap__content">
+                        <div class="roadmap__block">
+                            <div class="roadmap__item" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="roadmap__item-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="239" height="311" viewBox="0 0 239 311" fill="none">
+                                        <path d="M199.605 307.056L31.4653 299.61C15.9714 298.924 3.87026 285.975 4.23392 270.47L9.65681 39.2572C10.0083 24.2695 21.9111 12.1166 36.8882 11.4534L204.998 4.00912C221.463 3.27999 235.113 16.6279 234.752 33.1056L229.359 279.208C229.008 295.194 215.579 307.763 199.605 307.056Z" fill="white" stroke="#8776DD" stroke-width="7"/>
+                                    </svg>
+                                </div>
+                                <h4 class="roadmap__item-name">Phase 1</h4>
+                                <ul>
+                                    <li>Launch </li>
+                                    <li>Website </li>
+                                    <li>Initial Community</li>
+                                    <li>Growth</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap__item" data-aos="zoom-in" data-aos-delay="150">
+                                <div class="roadmap__item-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="237" height="278" viewBox="0 0 237 278" fill="none">
+                                        <path d="M203.882 273.692L40.5027 267.279C25.695 266.698 13.8034 254.866 13.1483 240.061L4.04097 34.2417C3.30163 17.5329 17.0421 3.78207 33.7514 4.50874L206.238 12.01C221.482 12.6729 233.5 25.2245 233.5 40.4831V245.214C233.5 261.392 220.048 274.326 203.882 273.692Z" fill="#FF5FE8" stroke="#8776DD" stroke-width="7"/>
+                                      </svg>
+                                </div>
+                                <h4 class="roadmap__item-name">Phase 2</h4>
+                                <ul>
+                                    <li>Listings on CoinGecko & CMC</li>
+                                    <li>Partnerships</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap__item" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="roadmap__item-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="238" height="270" viewBox="0 0 238 270" fill="none">
+                                        <path d="M206.249 261.238L32.9209 266.474C16.4957 266.97 3.05504 253.51 3.57463 237.086L10.091 31.0988C10.5776 15.7173 23.1875 3.5 38.5768 3.5H201.474C216.998 3.5 229.666 15.9237 229.969 31.4443L233.883 232.195C234.188 247.814 221.863 260.766 206.249 261.238Z" fill="#87F77B" stroke="#8776DD" stroke-width="7"/>
+                                      </svg>
+                                </div>
+                                <h4 class="roadmap__item-name">Phase 3</h4>
+                                <ul>
+                                    <li>CEX Listings (BingX, Kucoin, MEXC are in process)</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap__item" data-aos="zoom-in" data-aos-delay="250">
+                                <div class="roadmap__item-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="238" height="240" viewBox="0 0 238 240" fill="none">
+                                        <path d="M195.197 235.904L30.5752 227.664C15.4079 226.905 3.5 214.386 3.5 199.2V40.8769C3.5 25.663 15.4498 13.1316 30.6466 12.4091L203.939 4.17077C220.751 3.37149 234.591 17.2395 233.757 34.0505L225.087 208.851C224.307 224.577 210.923 236.691 195.197 235.904Z" fill="#E7FF2C" stroke="#8776DD" stroke-width="7"/>
+                                      </svg>
+                                </div>
+                                <h4 class="roadmap__item-name">Phase 4</h4>
+                                <ul>
+                                    <li>DAO Voting System</li>
+                                </ul>
+                            </div>
+                            <div class="roadmap__item" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="roadmap__item-bg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="240" height="278" viewBox="0 0 240 278" fill="none">
+                                        <path d="M207.932 270.677L32.7308 273.898C16.7177 274.192 3.60614 261.238 3.70749 245.222L5.01584 38.4637C5.11234 23.2131 17.1974 10.7412 32.4373 10.1644L202.408 3.73121C218.35 3.1278 231.683 15.7276 231.981 31.6786L235.903 241.649C236.197 257.39 223.672 270.387 207.932 270.677Z" fill="#FF6700" stroke="#8776DD" stroke-width="7"/>
+                                      </svg>
+                                </div>
+                                <h4 class="roadmap__item-name">Phase 5</h4>
+                                <ul>
+                                    <li>Ambassador Program for 30+ countries</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cryptonomics">
+            <span id="cryptonomics"></span>
+            <div class="container">
+                <div class="cryptonomics__inner">
+                    <h2 class="cryptonomics__title" data-aos="fade-up" data-aos-delay="0">Cryptonomics</h2>
+                    <div class="cryptonomics__middle" data-aos="fade-up" data-aos-delay="50">
+                        <div class="cryptonomics-icon">
+                            <img src="img/icon-1.svg" alt="">
+                        </div>
+                        <div class="cryptonomics__content">
+                            <div class="cryptonomics__box">
+                                <div class="cryptonomics__block">
+                                    <h4 class="cryptonomics__name" data-aos="fade-up" data-aos-delay="100">Buy Tax</h4>
+                                    <p class="cryptonomics__descr" data-aos="fade-up" data-aos-delay="150"><span>0%</span> <br>on all Buy Transactions</p>
+                                </div>
+                                <div class="cryptonomics__block">
+                                    <h4 class="cryptonomics__name" data-aos="fade-up" data-aos-delay="200">Liquidity Pool</h4>
+                                    <p class="cryptonomics__descr" data-aos="fade-up" data-aos-delay="250">Burned</p>
+                                </div>
+                            </div>
+                            <div class="cryptonomics__image" data-aos="fade-up" data-aos-delay="100">
+                                <img src="img/cryptonomics.svg" alt="">
+                            </div>
+                            <div class="cryptonomics__box">
+                                <div class="cryptonomics__block">
+                                    <h4 class="cryptonomics__name" data-aos="fade-up" data-aos-delay="100">Sell Tax</h4>
+                                    <p class="cryptonomics__descr" data-aos="fade-up" data-aos-delay="150"><span>0%</span> <br>on all Sell Transactions</p>
+                                </div>
+                                <div class="cryptonomics__block">
+                                    <h4 class="cryptonomics__name" data-aos="fade-up" data-aos-delay="200">Contract Safety</h4>
+                                    <p class="cryptonomics__descr" data-aos="fade-up" data-aos-delay="250">Renounced</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cryptonomics__bg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1224" height="677" viewBox="0 0 1224 677" fill="none">
+                                <mask id="path-1-inside-1_2_4361" fill="white">
+                                  <path d="M1084.22 1.47234C1124.19 1.47234 1166.39 -6.97104 1193.93 16.5812V17.9148C1233.01 51.6878 1222.8 134.343 1222.8 177.003C1225.55 289.7 1221.84 402.461 1211.69 514.734C1202.36 598.277 1223.68 662.713 1105.54 669.379C850.587 683.599 590.306 669.379 333.579 669.379C225.203 669.379 59.086 709.818 16.4462 595.167C-26.1936 480.516 27.5502 363.644 27.5502 250.771C29.7711 191.668 -6.20601 89.9044 43.5404 45.4662C81.7385 12.1375 159.467 16.5812 207.437 16.5812C298.935 15.6924 389.544 11.693 481.042 11.693C684.469 11.693 879.457 1.47234 1084.22 1.47234Z"/>
+                                </mask>
+                                <path d="M1084.22 1.47234C1124.19 1.47234 1166.39 -6.97104 1193.93 16.5812V17.9148C1233.01 51.6878 1222.8 134.343 1222.8 177.003C1225.55 289.7 1221.84 402.461 1211.69 514.734C1202.36 598.277 1223.68 662.713 1105.54 669.379C850.587 683.599 590.306 669.379 333.579 669.379C225.203 669.379 59.086 709.818 16.4462 595.167C-26.1936 480.516 27.5502 363.644 27.5502 250.771C29.7711 191.668 -6.20601 89.9044 43.5404 45.4662C81.7385 12.1375 159.467 16.5812 207.437 16.5812C298.935 15.6924 389.544 11.693 481.042 11.693C684.469 11.693 879.457 1.47234 1084.22 1.47234Z" fill="#C4AAFF"/>
+                                <path d="M1193.93 16.5812H1200.93V13.3571L1198.48 11.2615L1193.93 16.5812ZM207.437 16.5812V23.5812H207.471L207.505 23.5809L207.437 16.5812ZM43.5404 45.4662L38.9383 40.1916L38.9075 40.2185L38.877 40.2457L43.5404 45.4662ZM27.5502 250.771L20.5552 250.508L20.5502 250.639V250.771H27.5502ZM16.4462 595.167L23.0072 592.727L23.0072 592.727L16.4462 595.167ZM1105.54 669.379L1105.93 676.368L1105.93 676.368L1105.54 669.379ZM1211.69 514.734L1218.65 515.51L1218.66 515.437L1218.66 515.364L1211.69 514.734ZM1222.8 177.003H1215.8V177.089L1215.8 177.174L1222.8 177.003ZM1193.93 17.9148H1186.93V21.1175L1189.35 23.2114L1193.93 17.9148ZM1198.48 11.2615C1182.96 -2.01244 1163.64 -5.93865 1144.04 -6.79859C1134.22 -7.22964 1124.07 -6.89658 1114.05 -6.47267C1103.95 -6.04488 1094.02 -5.52766 1084.22 -5.52766V8.47234C1094.4 8.47234 1104.74 7.93414 1114.65 7.5148C1124.65 7.09158 1134.26 6.78582 1143.43 7.18795C1161.81 7.99439 1177.36 11.6226 1189.38 21.901L1198.48 11.2615ZM1084.22 -5.52766C981.733 -5.52766 881.708 -2.96986 781.951 -0.415031C682.166 2.14049 582.651 4.69301 481.042 4.69301V18.693C582.86 18.693 682.553 16.1352 782.309 13.5804C882.093 11.0249 981.941 8.47234 1084.22 8.47234V-5.52766ZM481.042 4.69301C389.706 4.69301 298.34 8.69789 207.369 9.58154L207.505 23.5809C299.529 22.687 389.382 18.693 481.042 18.693V4.69301ZM207.437 9.58121C183.794 9.58121 151.787 8.45891 121.12 11.561C90.6096 14.6472 59.7552 22.0285 38.9383 40.1916L48.1425 50.7407C65.5238 35.5752 92.6326 28.514 122.529 25.4899C152.268 22.4817 183.109 23.5812 207.437 23.5812V9.58121ZM38.877 40.2457C11.3033 64.8772 8.23648 104.642 10.738 143.074C12.0042 162.527 14.7787 182.474 17.0425 200.862C19.3312 219.453 21.0864 236.369 20.5552 250.508L34.5453 251.034C35.1244 235.621 33.2153 217.653 30.9376 199.152C28.6349 180.448 25.9406 161.095 24.7084 142.165C22.2132 103.83 26.0311 70.4933 48.2038 50.6866L38.877 40.2457ZM20.5502 250.771C20.5502 306.564 7.30563 362.793 -0.923526 421.328C-9.07604 479.318 -12.0541 538.616 9.88526 597.607L23.0072 592.727C2.30674 537.067 4.8807 480.604 12.9401 423.277C20.9229 366.495 34.5502 307.851 34.5502 250.771H20.5502ZM9.88526 597.607C32.6877 658.919 88.6407 677.971 149.874 682.25C180.58 684.396 213.241 682.893 244.746 680.892C276.437 678.879 306.778 676.379 333.579 676.379V662.379C306.193 662.379 275.128 664.934 243.859 666.92C212.404 668.918 180.55 670.36 150.85 668.284C91.27 664.12 42.8444 646.066 23.0072 592.727L9.88526 597.607ZM333.579 676.379C589.757 676.379 850.748 690.601 1105.93 676.368L1105.15 662.39C850.425 676.597 590.855 662.379 333.579 662.379V676.379ZM1105.93 676.368C1136.01 674.671 1158.02 669.269 1174.08 660.256C1190.39 651.105 1200.12 638.478 1205.95 623.413C1211.67 608.645 1213.61 591.619 1214.77 573.657C1215.96 555.354 1216.34 536.198 1218.65 515.51L1204.74 513.957C1202.38 535.041 1201.93 555.269 1200.8 572.752C1199.64 590.577 1197.78 605.741 1192.89 618.358C1188.12 630.678 1180.44 640.632 1167.23 648.047C1153.77 655.601 1134.14 660.754 1105.14 662.39L1105.93 676.368ZM1218.66 515.364C1228.83 402.825 1232.55 289.796 1229.79 176.833L1215.8 177.174C1218.54 289.603 1214.84 402.098 1204.72 514.103L1218.66 515.364ZM1229.8 177.003C1229.8 156.558 1232.35 124.093 1230 93.5876C1227.65 63.1137 1220.3 31.4567 1198.5 12.6181L1189.35 23.2114C1206.63 38.1459 1213.73 64.7028 1216.04 94.6648C1218.35 124.596 1215.8 154.788 1215.8 177.003H1229.8ZM1200.93 17.9148V16.5812H1186.93V17.9148H1200.93Z" fill="#8776DD" mask="url(#path-1-inside-1_2_4361)"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="308" height="556" viewBox="0 0 308 556" fill="none">
+                                <mask id="path-1-inside-1_18_9466" fill="white">
+                                  <path d="M306.836 492.504C306.836 510.662 310.676 529.83 299.966 542.339L299.36 542.339C284.004 560.094 246.421 555.453 227.024 555.453C175.782 556.702 124.51 555.018 73.4606 550.409C35.4739 546.172 6.17548 555.857 3.14463 502.188C-3.32118 386.378 3.14464 268.146 3.14465 151.528C3.14465 102.298 -15.2425 26.8397 36.8882 7.47065C89.0189 -11.8984 142.16 12.5146 193.482 12.5146C220.356 13.5234 266.627 -2.81907 286.833 19.7781C301.987 37.1296 299.967 72.4376 299.967 94.2278C300.371 135.791 302.189 176.95 302.189 218.513C302.189 310.919 306.836 399.492 306.836 492.504Z"/>
+                                </mask>
+                                <path d="M306.836 492.504C306.836 510.662 310.676 529.83 299.966 542.339L299.36 542.339C284.004 560.094 246.421 555.453 227.024 555.453C175.782 556.702 124.51 555.018 73.4606 550.409C35.4739 546.172 6.17548 555.857 3.14463 502.188C-3.32118 386.378 3.14464 268.146 3.14465 151.528C3.14465 102.298 -15.2425 26.8397 36.8882 7.47065C89.0189 -11.8984 142.16 12.5146 193.482 12.5146C220.356 13.5234 266.627 -2.81907 286.833 19.7781C301.987 37.1296 299.967 72.4376 299.967 94.2278C300.371 135.791 302.189 176.95 302.189 218.513C302.189 310.919 306.836 399.492 306.836 492.504Z" fill="#C4AAFF"/>
+                                <path d="M299.966 542.339L299.966 545.522L301.432 545.522L302.384 544.409L299.966 542.339ZM299.967 94.2278L296.784 94.2278L296.784 94.2433L296.784 94.2587L299.967 94.2278ZM286.833 19.7781L289.23 17.6844L289.218 17.6704L289.205 17.6566L286.833 19.7781ZM193.482 12.5146L193.602 9.33404L193.542 9.3318L193.482 9.3318L193.482 12.5146ZM36.8882 7.47065L35.7796 4.48709L35.7796 4.48709L36.8882 7.47065ZM3.14463 502.188L-0.0332641 502.366L-0.0331491 502.368L3.14463 502.188ZM73.4606 550.409L73.1078 553.572L73.1411 553.576L73.1744 553.579L73.4606 550.409ZM227.024 555.453L227.024 552.27L226.985 552.27L226.946 552.271L227.024 555.453ZM299.36 542.339L299.36 539.156L297.905 539.156L296.953 540.257L299.36 542.339ZM302.384 544.409C308.421 537.358 310.206 528.582 310.597 519.679C310.793 515.217 310.642 510.607 310.449 506.057C310.254 501.466 310.019 496.957 310.019 492.504L303.654 492.504C303.654 497.13 303.898 501.826 304.089 506.327C304.281 510.869 304.42 515.237 304.238 519.4C303.871 527.748 302.221 534.811 297.549 540.269L302.384 544.409ZM310.019 492.504C310.019 445.951 308.856 400.514 307.695 355.2C306.533 309.873 305.372 264.668 305.372 218.513L299.006 218.513C299.006 264.763 300.169 310.049 301.331 355.363C302.493 400.689 303.654 446.045 303.654 492.504L310.019 492.504ZM305.372 218.513C305.372 177.024 303.551 135.52 303.149 94.1968L296.784 94.2587C297.19 136.061 299.006 176.876 299.006 218.513L305.372 218.513ZM303.149 94.2278C303.149 83.4886 303.66 68.9486 302.249 55.0178C300.846 41.1581 297.489 27.1413 289.23 17.6844L284.435 21.8719C291.33 29.7664 294.541 42.0793 295.916 55.6591C297.284 69.1677 296.784 83.1768 296.784 94.2278L303.149 94.2278ZM289.205 17.6566C278.006 5.13123 259.926 3.73833 242.451 4.8746C233.606 5.44977 224.537 6.71004 216.176 7.73838C207.723 8.77803 200.031 9.57538 193.602 9.33404L193.363 15.6952C200.371 15.9583 208.54 15.0911 216.953 14.0565C225.457 13.0105 234.257 11.7866 242.865 11.2269C260.296 10.0934 275.454 11.8278 284.46 21.8997L289.205 17.6566ZM193.482 9.3318C168.113 9.3318 142.546 3.31538 115.931 -0.422653C89.5638 -4.1259 62.6018 -5.47861 35.7796 4.48709L37.9967 10.4542C63.3053 1.05086 88.9791 2.22015 115.046 5.88116C140.865 9.50739 167.529 15.6975 193.482 15.6975L193.482 9.3318ZM35.7796 4.48709C7.90188 14.845 -0.761736 40.2625 -2.70768 68.0794C-3.68348 82.0282 -3.00022 96.8646 -2.09023 111.176C-1.17487 125.572 -0.0381966 139.354 -0.0381972 151.528L6.32749 151.528C6.32749 139.087 5.16577 124.976 4.26262 110.772C3.3541 96.4837 2.69874 82.0143 3.64248 68.5237C5.53563 41.4616 13.7438 19.4653 37.9967 10.4542L35.7796 4.48709ZM-0.0381972 151.528C-0.0382022 267.896 -6.50487 386.451 -0.0332635 502.366L6.32253 502.011C-0.137497 386.304 6.32749 268.396 6.32749 151.528L-0.0381972 151.528ZM-0.0331491 502.368C0.73842 516.03 3.19456 526.03 7.29324 533.327C11.4549 540.736 17.1963 545.154 24.0458 547.804C30.7605 550.402 38.5019 551.282 46.6688 551.81C54.991 552.349 63.7011 552.523 73.1078 553.572L73.8135 547.246C64.2268 546.177 55.0296 545.972 47.0799 545.458C38.9748 544.934 32.0797 544.086 26.3426 541.867C20.7403 539.7 16.2146 536.211 12.8433 530.21C9.40901 524.096 7.06627 515.181 6.32241 502.009L-0.0331491 502.368ZM73.1744 553.579C124.345 558.199 175.738 559.887 227.101 558.635L226.946 552.271C175.825 553.517 124.675 551.837 73.7468 547.239L73.1744 553.579ZM227.024 558.636C236.321 558.636 251.082 559.797 264.952 558.727C278.808 557.659 293.202 554.325 301.767 544.421L296.953 540.257C290.162 548.108 278.087 551.33 264.463 552.381C250.853 553.43 237.124 552.27 227.024 552.27L227.024 558.636ZM299.36 545.522L299.966 545.522L299.966 539.156L299.36 539.156L299.36 545.522Z" fill="#8776DD" mask="url(#path-1-inside-1_18_9466)"/>
+                              </svg>
+                        </div>
+                    </div>
+
+                    <div class="cryptonomics__bottom">
+                        <h4 class="cryptonomics__bottom-title" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="top-bottom">Always remember ABOUT THE TITO CONTRACT DETAILS!</h4>
+                        <div class="cryptonomics__bottom-block">
+                            <div class="cryptonomics__bottom-image" data-aos="fade-up" data-aos-delay="50">
+                                <img src="img/icon-1.svg" alt="">
+                            </div>
+                            <div class="cryptonomics__bottom-content" data-aos="fade-up" data-aos-delay="100">
+                                <p class="cryptonomics__bottom-name">Contract Address</p>
+                                <p class="cryptonomics__bottom-adress" data-adress="0x68bbed6a47194eff1cf514b50ea91895597fc91e">0x68bbed6a47194eff1cf514b50ea91895597fc91e</p>
+                            </div>
+                            <button class="cryptonomics__bottom-copy" data-aos="fade-up" data-aos-delay="150">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3335 16.7502V8.37516C22.3335 6.83975 23.5897 5.5835 25.1252 5.5835H55.8335C57.3689 5.5835 58.6252 6.83975 58.6252 8.37516V47.4585C58.6252 48.9939 57.3689 50.2502 55.8335 50.2502H44.6668V19.5418C44.6668 18.0064 43.4106 16.7502 41.8752 16.7502H22.3335Z" fill="#C4AAFF" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.875 61.4167H11.1667C9.63125 61.4167 8.375 60.1604 8.375 58.625V19.5417C8.375 18.0063 9.63125 16.75 11.1667 16.75H41.875C43.4104 16.75 44.6667 18.0063 44.6667 19.5417V58.625C44.6667 60.1604 43.4104 61.4167 41.875 61.4167Z" fill="#C4AAFF" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="37" viewBox="0 0 56 37" fill="none">
+                                    <path d="M1 16.3L19.5625 35L55 1" stroke="#8776DD" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="verify">
+            <div class="container">
+                <div class="verify__inner">
+                    <div class="verify__block">
+                        <h2 class="verify__title" data-aos="fade-up" data-aos-delay="0">Verify & <br>buy</h2>
+                        <div class="verify__image" data-aos="fade-up" data-aos-delay="50">
+                            <img class="verify__img" src="img/verify/verify.png" alt="">
+                            <img class="verify__bg" src="img/verify/verify.svg" alt="">
+                        </div>
+                        <div class="verify-bg">
+                            <img src="img/verify/verify-bg.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="verify__block" data-aos="fade-up" data-aos-delay="100">
+                        <div class="verify__image">
+                            <img class="verify__img" src="img/verify/verify-2.png" alt="">
+                            <img class="verify__bg" src="img/verify/verify-2.svg" alt="">
+                        </div>
+                    </div>
+                    <img class="verify-icon" src="img/icon-1.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="buy">
+            <span id="buy"></span>
+            <div class="container">
+                <div class="buy__inner">                    
+                    <h2 class="buy__title" data-aos="fade-up" data-aos-delay="0">One click to buy more TITO</h2>
+                    <p class="buy__descr" data-aos="fade-up" data-aos-delay="50">Buy vaucher with fiat :</p>
+                    <div class="buy__slider">
+                        <div class="swiper-wrapper">
+                            <div class="buy__slide swiper-slide" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="buy__slide-image">
+                                    <img src="img/buy/buy-1.svg" alt="">
+                                </div>
+                                <h3 class="buy__slide-name">Sniff Test</h3>
+                                <p class="buy__slide-descr">Lorem ipsum...</p>
+                                <p class="buy__slide-price">€100<span>(Fiat)</span></p>
+                                <button class="buy__slide-btn btn" href="#" data-price="100">Buy $TITO</button>
+                            </div>
+                            <div class="buy__slide swiper-slide" data-aos="zoom-in" data-aos-delay="150">
+                                <div class="buy__slide-image">
+                                    <img src="img/buy/buy-2.svg" alt="">
+                                </div>
+                                <h3 class="buy__slide-name">Hunter</h3>
+                                <p class="buy__slide-descr">Lorem ipsum...</p>
+                                <p class="buy__slide-price">€500<span>(Fiat)</span></p>
+                                <button class="buy__slide-btn btn" href="#" data-price="500">Buy $TITO</button>
+                            </div>
+                            <div class="buy__slide swiper-slide" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="buy__slide-image">
+                                    <img src="img/buy/buy-3.svg" alt="">
+                                </div>
+                                <h3 class="buy__slide-name">Diamond Paw</h3>
+                                <p class="buy__slide-descr">Lorem ipsum...</p>
+                                <p class="buy__slide-price">€1000<span>(Fiat)</span></p>
+                                <button class="buy__slide-btn btn" href="#" data-price="1000">Buy $TITO</button>
+                            </div>
+                            <div class="buy__slide swiper-slide" data-aos="zoom-in" data-aos-delay="250">
+                                <div class="buy__slide-image">
+                                    <img src="img/buy/buy-4.svg" alt="">
+                                </div>
+                                <h3 class="buy__slide-name">Moon Tito</h3>
+                                <p class="buy__slide-descr">Lorem ipsum...</p>
+                                <p class="buy__slide-price">€10.000<span>(Fiat)</span></p>
+                                <button class="buy__slide-btn btn" href="#" data-price="10.000">Buy $TITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy__bottom">
+                        <p class="buy__bottom-name" data-aos="fade-up" data-aos-delay="0">Buy with crypto:</p>
+                        <div class="buy__bottom-block">
+                            <a data-aos="fade-right" data-aos-delay="50" class="buy__bottom-btn btn" href="#">DEX 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+                            <a data-aos="fade-left" data-aos-delay="100" class="buy__bottom-btn btn" href="#">DEX 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist">
+            <span id="playlist"></span>
+            <div class="container">
+                <div class="playlist__inner">
+                    <div class="playlist__bg"></div>
+                    <div class="paralax-icon playlist-icon-1">
+                        <img src="img/icon-1.svg" alt="">
+                    </div>
+                    <div class="paralax-icon playlist-icon-2">
+                        <img src="img/icon-2.svg" alt="">
+                    </div>
+                    <div class="paralax-icon playlist-icon-3">
+                        <img src="img/icon-2.svg" alt="">
+                    </div>
+                    <div class="paralax-icon playlist-icon-4">
+                        <img src="img/icon-2.svg" alt="">
+                    </div>
+                    <div class="paralax-icon playlist-icon-5">
+                        <img src="img/icon-1.svg" alt="">
+                    </div>
+                    <h2 class="playlist__title" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="center-bottom">TITO’s playlist</h2>
+                    <div class="playlist__image" data-aos="zoom-in" data-aos-delay="50" data-aos-anchor-placement="center-bottom">
+                        <img src="img/playlist.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__inner">
+                    <p class="feedback__name" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="center-bottom">TITO TEAM cant promise a reply but we’d love to hear your thoughts:</p>
+                    <a class="feedback__email" href="mailto:tito@tito.meme" data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="center-bottom">tito@tito.meme</a>
+                    <div class="feedback__social hero__social">
+                        <a data-aos="fade-right" data-aos-delay="50" href="#" target="_blank" data-aos-anchor-placement="center-bottom">Telegram news</a>
+                        <a data-aos="zoom-in" data-aos-delay="100" href="#" target="_blank" data-aos-anchor-placement="center-bottom">X</a>
+                        <a data-aos="fade-left" data-aos-delay="150" href="#" target="_blank" data-aos-anchor-placement="center-bottom">Telegram chat</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popup">
+            <div class="container">
+                <div class="popup__inner">
+                    <button class="popup__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                            <rect x="42.3359" y="13.6328" width="3" height="40" transform="rotate(45 42.3359 13.6328)" fill="#292929"/>
+                            <rect x="14.0586" y="15.7539" width="3" height="40" transform="rotate(-45 14.0586 15.7539)" fill="#292929"/>
+                        </svg>
+                    </button>
+                    <div class="popup__top">
+                        <div class="popup__block">
+                            <img class="popup__image icon-image-bg" src="img/manifesto/manifesto.svg" alt="">
+                            <img class="popup__bg icon-hieroglyph-bg" src="img/manifesto/manifesto-bg.svg" alt="">
+                            <p class="popup__price"><span>€00</span><span>(Fiat)</span></p>
+                        </div>
+                        <div class="popup__content">
+                            <h2 class="popup__title">BUY VAUCHER</h2>
+                            <p class="popup__descr">focus on what matters.</p>
+                            <form class="popup__form popup-form" action="#">
+                                <input type="hidden" name="price">
+                                <input class="popup-form__input" type="text" name="tg-name" placeholder="TG name">
+                                <input class="popup-form__input" type="email" name="email" placeholder="email*" required>
+                                <input class="popup-form__input" type="text" name="TON-wallet-Address" placeholder="TON wallet Address*" required>
+                                <input class="popup-form__input" type="text" name="TRON-ADdRESS-FOR-NFT" placeholder="TRON ADdRESS FOR NFT*" required>
+                                <label class="popup-form-checkbox">
+                                    <input type="checkbox" name="agree" checked required>
+                                    <span>By clicking the "Buy" button, you agree to buy vaucher and to the Privacy Policy and consent to the processing of personal data. Please double-check the accuracy of your wallet details before submitting the form. The team is not responsible for errors in the information provided by the client.</span>
+                                </label>
+                                <button class="popup__form-btn btn" type="submit">Buy $TITO</button>
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="popup__bottom">
+                        <p class="popup__bottom-notice">NOTICE</p>
+                        <ol class="popup__bottom-list">
+                            <li>Digital Voucher Purchase: By completing this purchase, you are acquiring a digital voucher which will be sent yor email. An NFT and a $BANC token drop will be provided by the team. The NFT will be sent to the TRON personal wallet as specified by the client in this form. The $BANC tokens will be transferred to the personal digital wallet provided, in an amount equivalent to the $BANC/TON rate <a href="#" target="_blank">on ston</a>.fi at the time of the transaction.</li>
+                            <li>Payment Processing Fee: Please note that the payment processing company may charge a transaction fee.</li>
+                            <li>Transaction Confirmation: A confirmation of your purchase will be sent to the email address provided above.</li>
+                            <li>$BANC Token Distribution: The $BANC token drop will occur within one hour of a successful purchase or during the team’s working hours (9:00–19:00 CET).</li>
+                            <li>Communication Regarding Issues: The team reserves the right to contact you via Telegram or email in case of any issues related to your transaction.</li>
+                        </ol>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <button class="footer__up">
+                <svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+                    <g clip-path="url(#clip0_1_9527)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0859 0H53.9141C57.3826 0.00667501 60.7072 1.38751 63.1598 3.84016C65.6125 6.2928 66.9933 9.61738 67 13.0859V53.9141C66.9933 57.3826 65.6125 60.7072 63.1598 63.1598C60.7072 65.6125 57.3826 66.9933 53.9141 67H13.0859C9.61738 66.9933 6.2928 65.6125 3.84016 63.1598C1.38751 60.7072 0.00667501 57.3826 0 53.9141L0 13.0859C0.00667501 9.61738 1.38751 6.2928 3.84016 3.84016C6.2928 1.38751 9.61738 0.00667501 13.0859 0ZM49.0068 28.3625L35.2342 14.5895C34.7741 14.13 34.1505 13.8719 33.5003 13.8719C32.8501 13.8719 32.2264 14.13 31.7664 14.5895L17.9932 28.3625C17.5424 28.8247 17.292 29.4461 17.2963 30.0917C17.3006 30.7374 17.5591 31.3553 18.016 31.8116C18.4728 32.2679 19.0911 32.5257 19.7367 32.5292C20.3824 32.5327 21.0034 32.2816 21.4651 31.8302L31.0465 22.2488V50.6783C31.0532 51.3247 31.3146 51.9423 31.7741 52.397C32.2335 52.8517 32.8537 53.1067 33.5001 53.1067C34.1465 53.1067 34.7668 52.8517 35.2262 52.397C35.6856 51.9423 35.9471 51.3247 35.9537 50.6783V22.2494L45.5351 31.8308C45.9969 32.2821 46.6179 32.5332 47.2635 32.5297C47.9092 32.5262 48.5275 32.2684 48.9843 31.8121C49.4411 31.3558 49.6997 30.7379 49.704 30.0922C49.7082 29.4466 49.4579 28.8253 49.0071 28.363L49.0068 28.3625Z" fill="#3C2868"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_9527">
+                        <rect width="67" height="67" fill="white"/>
+                      </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <a class="footer__logo" href="index.html">
+                        <img src="img/footer-logo.svg" alt="">
+                        TITOCoin
+                    </a>
+                    <p class="footer__notice"><strong>Notice</strong> <br>By participating, every individual acknowledges and understands that the TITO team and community make no promises or guarantees. All digital assets are held entirely at the participant’s own risk.</p>
+                </div>
+                <div class="footer__image">
+                    <img src="img/footer.svg" alt="">
+                </div>
+                <div class="footer__right">
+                    <a class="footer__support btn" href="#">Support</a>
+                    <div class="footer__contributors">
+                        <div class="footer__contributors-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                                <path d="M22.8911 0.192502L22.4376 14.0358L35.4632 18.7449L22.1573 22.5914L21.7038 36.4348L13.9338 24.9687L0.627915 28.8152L9.13171 17.8823L1.36171 6.41628L14.3873 11.1254L22.8911 0.192502Z" fill="#C4AAFF"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                                <path d="M22.8911 0.192502L22.4376 14.0358L35.4632 18.7449L22.1573 22.5914L21.7038 36.4348L13.9338 24.9687L0.627915 28.8152L9.13171 17.8823L1.36171 6.41628L14.3873 11.1254L22.8911 0.192502Z" fill="#C4AAFF"/>
+                            </svg>
+                        </div>
+                        <p class="footer__contributors-descr">Contributors: <br>2025 | The TITO and Community Movement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
