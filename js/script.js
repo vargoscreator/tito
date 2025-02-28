@@ -53,10 +53,7 @@ const imageClasses = [
     { selector: ".hero-icon-2", speed: 0.01 },
     { selector: ".hero-icon-3", speed: 0.06 },
     { selector: ".hero-icon-4", speed: 0.1 },
-    { selector: ".roadmap-icon-1", speed: 0.05 },
-    { selector: ".roadmap-icon-2 img", speed: 0.03 },
     { selector: ".cryptonomics__image img", speed: 0.05 },
-    { selector: ".cryptonomics-icon", speed: 0.03 },
     { selector: ".verify-icon", speed: 0.03 },
     { selector: ".playlist-icon-1", speed: 0.09 },
     { selector: ".playlist-icon-2", speed: 0.01 },
@@ -293,5 +290,37 @@ const anim = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../animate.json' // Укажите путь к файлу
+    path: './animate.json'
 });
+let lastScroll = {};
+const roadmapClasses = ['roadmap-icon-1', 'roadmap-icon-2 img', 'cryptonomics-icon'];
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    const extraSpace = 200;
+    return (
+        rect.top >= -rect.height - extraSpace && 
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + rect.height + extraSpace
+    );
+}
+function parallaxEffect() {
+    roadmapClasses.forEach(className => {
+        const roadmapIcon = document.querySelector(`.${className}`);
+        if (!roadmapIcon) return;
+        if (lastScroll[className] === undefined) {
+            lastScroll[className] = 0;
+        }
+        if (isElementInViewport(roadmapIcon)) {
+            const scrollPosition = window.scrollY;
+            const parallaxSpeed = 0.1;
+            const maxOffset = 400;
+            const elementOffset = roadmapIcon.getBoundingClientRect().top + scrollPosition;
+            const relativeScroll = scrollPosition - (elementOffset - window.innerHeight);
+            let offset = relativeScroll * parallaxSpeed;
+            offset = Math.min(Math.max(offset, -maxOffset), maxOffset);
+            roadmapIcon.style.transform = `translateY(${offset}px)`;
+            lastScroll[className] = offset;
+        }
+    });    
+    requestAnimationFrame(parallaxEffect);
+}
+requestAnimationFrame(parallaxEffect);

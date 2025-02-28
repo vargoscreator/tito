@@ -1483,12 +1483,15 @@ div#animation-container {
     }
 }
 @media (max-width: 767px) {
+    .roadmap{
+        margin-top: 150px;
+    }
     .roadmap-icon-1 {
         top: -200px;
         left: -60px;
     }
     .roadmap-icon-2 {
-        bottom: 171px;
+        bottom: 240px;
         right: 161px;
     }
 }
@@ -1497,7 +1500,7 @@ div#animation-container {
         margin-top: 120px;
     }
     .roadmap-icon-1 {
-        top: -103px;
+        top: -150px;
         left: 5px;
     }
     .roadmap-icon-1 img {
@@ -1644,7 +1647,7 @@ div#animation-container {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 297px;
+    top: 147px;
     right: -70px;
     z-index: 1;
 }
@@ -1762,7 +1765,8 @@ div#animation-container {
         top: -80px;
     }
     .cryptonomics-icon {
-        right: 1px;
+        right: -19px;
+        top: 67px;
     }
     .cryptonomics-icon img {
         width: 87.951px;
@@ -1856,7 +1860,7 @@ div#animation-container {
     .cryptonomics-icon {
         right: 201px;
         top: initial;
-        bottom: -150px;
+        bottom: -96px;
     }
     .cryptonomics__bottom-title {
         font-size: 20.38px;
@@ -1913,7 +1917,7 @@ div#animation-container {
     }
     .cryptonomics-icon {
         right: 130px;
-        bottom: -130px;
+        bottom: -80px;
     }
     .cryptonomics__bottom-block {
         margin-top: 28px;
