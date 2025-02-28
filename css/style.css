@@ -581,6 +581,15 @@ h2{
     width: 67.51px;
     height: 63.719px;
 }
+div#animation-container {
+    height: 590px;
+}
+.hero__image-main svg {
+    width: 150% !important;
+    height: auto !important;
+    margin-left: -20%;
+    margin-top: -70px;
+}
 @media (max-width: 1279px) {
     .hero {
         padding: 182px 0 54px;
@@ -621,6 +630,9 @@ h2{
         top: 179px;
         right: -35px;
     }
+    div#animation-container {
+        height: 490px;
+    }
 }
 @media (max-width: 999px) {
     .hero {
@@ -637,6 +649,14 @@ h2{
     .hero-icon-1 img {
         width: 93px;
         height: 94px;
+    }
+    .hero__image-main svg {
+        width: 149% !important;
+        margin-left: -17%;
+        margin-top: -30px;
+    }
+    div#animation-container {
+        height: 400px;
     }
 }
 @media (max-width: 767px) {
@@ -691,6 +711,9 @@ h2{
         margin-left: auto;
         margin-right: auto;
     }
+    div#animation-container {
+        height: 320px;
+    }
 }
 @media (max-width: 479px) {
     .hero__block{
@@ -701,8 +724,8 @@ h2{
         height: 710px;
     }
     .hero-icon-1 {
-        top: -133px;
-        left: 105px;
+        top: -164px;
+        left: 145px;
     }
     .hero-icon-2 {
         top: -4px;
@@ -743,6 +766,13 @@ h2{
     }
     .hero__links-block{
         gap: 8px;
+    }
+    div#animation-container {
+        height: 310px;
+    }
+    .hero__image-main svg {
+        margin-left: -25%;
+        margin-top: -46px;
     }
 }
 /* around */

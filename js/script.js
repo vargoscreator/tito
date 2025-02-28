@@ -47,32 +47,54 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let isAnimating = false;
+let isMobile = window.innerWidth < 480;
+const imageClasses = [
+    { selector: ".hero-icon-1", speed: 0.09 },
+    { selector: ".hero-icon-2", speed: 0.01 },
+    { selector: ".hero-icon-3", speed: 0.06 },
+    { selector: ".hero-icon-4", speed: 0.1 },
+    { selector: ".roadmap-icon-1", speed: 0.05 },
+    { selector: ".roadmap-icon-2 img", speed: 0.03 },
+    { selector: ".cryptonomics__image img", speed: 0.05 },
+    { selector: ".cryptonomics-icon", speed: 0.03 },
+    { selector: ".verify-icon", speed: 0.03 },
+    { selector: ".playlist-icon-1", speed: 0.09 },
+    { selector: ".playlist-icon-2", speed: 0.01 },
+    { selector: ".playlist-icon-3", speed: 0.07 },
+    { selector: ".playlist-icon-4", speed: 0.03 },
+    { selector: ".playlist-icon-5", speed: 0.13 },
+];
+function resetTransforms() {
+    imageClasses.forEach(({ selector }) => {
+        document.querySelectorAll(selector).forEach((img) => {
+            img.style.transform = 'translate(0px, 0px)';
+        });
+    });
 
-document.addEventListener("mousemove", (e) => {
+    document.querySelectorAll('.icon-image-bg').forEach(image => {
+        image.style.transform = 'translate(0px, 0px)';
+    });
+
+    document.querySelectorAll('.icon-hieroglyph-bg').forEach(bg => {
+        bg.style.transform = 'translate(0px, 0px)';
+    });
+}
+function checkScreenWidth() {
+    const wasMobile = isMobile;
+    isMobile = window.innerWidth < 480;
+    if (isMobile && !wasMobile) {
+        resetTransforms();
+    }
+}
+function animateElements(e) {
+    if (isMobile) return;
+
     if (!isAnimating) {
         isAnimating = true;
         requestAnimationFrame(() => {
             const { clientX: x, clientY: y } = e;
             const centerX = window.innerWidth / 2;
             const centerY = window.innerHeight / 2;
-
-            const imageClasses = [
-                { selector: ".hero__image-main", speed: 0.06 },
-                { selector: ".hero-icon-1", speed: 0.09 },
-                { selector: ".hero-icon-2", speed: 0.01 },
-                { selector: ".hero-icon-3", speed: 0.06 },
-                { selector: ".hero-icon-4", speed: 0.1 },
-                { selector: ".roadmap-icon-1", speed: 0.05 },
-                { selector: ".roadmap-icon-2 img", speed: 0.03 },
-                { selector: ".cryptonomics__image img", speed: 0.05 },
-                { selector: ".cryptonomics-icon", speed: 0.03 },
-                { selector: ".verify-icon", speed: 0.03 },
-                { selector: ".playlist-icon-1", speed: 0.09 },
-                { selector: ".playlist-icon-2", speed: 0.01 },
-                { selector: ".playlist-icon-3", speed: 0.07 },
-                { selector: ".playlist-icon-4", speed: 0.03 },
-                { selector: ".playlist-icon-5", speed: 0.13 },
-            ];
 
             imageClasses.forEach(({ selector, speed }) => {
                 document.querySelectorAll(selector).forEach((img) => {
@@ -84,8 +106,8 @@ document.addEventListener("mousemove", (e) => {
 
             const images = document.querySelectorAll('.icon-image-bg');
             const bgs = document.querySelectorAll('.icon-hieroglyph-bg');
-            const mouseX = e.clientX - window.innerWidth / 2;
-            const mouseY = e.clientY - window.innerHeight / 2;
+            const mouseX = x - window.innerWidth / 2;
+            const mouseY = y - window.innerHeight / 2;
             const imageSpeed = 0.02;
             const bgSpeed = -0.02;
 
@@ -104,7 +126,10 @@ document.addEventListener("mousemove", (e) => {
             isAnimating = false;
         });
     }
-});
+}
+window.addEventListener('resize', checkScreenWidth);
+document.addEventListener("mousemove", animateElements);
+checkScreenWidth();
 
 
 
@@ -260,4 +285,13 @@ document.addEventListener("DOMContentLoaded", function () {
     closeBtn.addEventListener("click", () => {
         menu.classList.remove("active");
     });
+});
+
+
+const anim = lottie.loadAnimation({
+    container: document.getElementById('animation-container'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '../animate.json' // Укажите путь к файлу
 });
