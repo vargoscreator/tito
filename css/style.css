@@ -3110,13 +3110,20 @@ div#animation-container {
     bottom: -14px;
     right: -27px;
 }
-@media (max-width: 1279px) {
-
-}
-
 @media (max-width: 767px) {
-
+    .popup__top{
+        flex-direction: column;
+    }
+    .popup__content{
+        max-width: 100%;
+    }
+    .popup__price {
+        bottom: -40px;
+        right: 10px;
+    }
 }
 @media (max-width: 479px) {
-
+    .popup__inner {
+        padding: 60px 20px 40px 20px;
+    }
 }
