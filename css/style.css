@@ -490,6 +490,7 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 500px;
 }
 .hero__image{
     position: relative;
@@ -583,6 +584,7 @@ h2{
 }
 div#animation-container {
     height: 590px;
+    width: 100%;
 }
 .hero__image-main svg {
     width: 150% !important;
@@ -613,6 +615,7 @@ div#animation-container {
     .hero__block {
         top: -108px;
         gap: 30px;
+        width: 440px;
     }
     .hero-icon-1 {
         top: 37px;
@@ -633,6 +636,9 @@ div#animation-container {
     div#animation-container {
         height: 490px;
     }
+    .hero__block{
+        width: 440px;
+    }
 }
 @media (max-width: 999px) {
     .hero {
@@ -642,6 +648,7 @@ div#animation-container {
         top: -68px;
         right: 0px;
         gap: 30px;
+        width: 317px;
     }
     .hero__image-main {
         width: 310px;
@@ -650,10 +657,8 @@ div#animation-container {
         width: 93px;
         height: 94px;
     }
-    .hero__image-main svg {
-        width: 149% !important;
-        margin-left: -17%;
-        margin-top: -30px;
+    .hero__image-main svg{
+        width: 164% !important;
     }
     div#animation-container {
         height: 400px;
@@ -680,6 +685,7 @@ div#animation-container {
         right: initial;
         bottom: initial;
         margin: 17px auto 21px;
+        width: auto;
     }
     .hero__image-main {
         width: 271px;
@@ -713,6 +719,10 @@ div#animation-container {
     }
     div#animation-container {
         height: 320px;
+    }
+    .hero__image-main svg{
+        width: 100% !important;
+        margin: -50px auto 0;
     }
 }
 @media (max-width: 479px) {
@@ -771,8 +781,8 @@ div#animation-container {
         height: 310px;
     }
     .hero__image-main svg {
-        margin-left: -25%;
-        margin-top: -46px;
+        width: 380px !important;
+        margin: -30px 0 0 -30px;
     }
 }
 /* around */
@@ -1996,6 +2006,7 @@ div#animation-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .verify__image img{
     width: 100%;
